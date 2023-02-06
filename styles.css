@@ -29,6 +29,7 @@ body {
     font-size: 1.5rem;
     scroll-behavior: smooth;
     text-align: center;
+    align-items: center;
     background-color: var(--black);
     color: var(--dark);
     width: 100%;
@@ -47,6 +48,7 @@ nav{
     padding: 2rem;
     margin: -50% 10% 0 50%;
     position: absolute;
+    font-size: 1.8rem;
 }
 
 img{
@@ -77,12 +79,19 @@ h2{
     color: white;
 }
 
-#welcome p{
-    text-align: left;
-    padding: 4rem;
-}
- #about p{
+#welcome p,  #about p {
     text-align: left;
     padding: 4rem;
 }
 
+
+@media(max-width: 800px) {
+    #mission p{
+        padding: 1rem;
+        margin: -170% 0%;
+        font-size: 1.2rem;
+    }
+    #welcome p,  #about p {
+        padding: 1rem;
+    }
+}

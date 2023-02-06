@@ -21,9 +21,9 @@
 
 
 <body>
-    <nav class="navebar navbar-expand-md mb-2">
-        <div class="container">
 
+    <nav class="navbar navbar-expand-md navbar-light mb-2">
+        <div class="container-xxl">
             <!-- toggle button for mobile nav -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -33,14 +33,23 @@
             <!-- navbar links -->
             <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#mission">mission</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mission">mission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faaq">faq</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">products</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
                 </ul>
             </div>
-
         </div>
     </nav>
 
@@ -62,7 +71,7 @@
         <section id="about">
             <div class="container-fluid pb-3">
                 <div class="row d-flex justify-content-center align-items-center">
-                    <div class="col-md-6 p-0">
+                    <div class="col-md-6">
                         <img class="img-fluid" src="/img/about.jpg">
                     </div>
                     <div class="col-md-6">
@@ -73,18 +82,21 @@
             </div>
         </section>
 
-        <section id="mission">
-                    <img id="img-fluid" width="100%" src="/img/mission.jpg">
+        <section id="mission"> 
+                    <picture>
+                        <source class="img-fluid" srcset="/img/mission.jpg" media="(min-width:800px)">
+                        <img id="img-fluid" width="100%" src="/img/mission_mobile.jpg">
+                    </picture>           
                     <p>"Ceramics is the art of creating beauty out of clay.  It allows us to mold and shape the world around us, bringing function and form together in a way that is both practical and aesthetically pleasing. We hope to bring joy and beauty to homes around the world with our one-of-a-kind ceramics."
                         <br>- Leia Kowalsky
                     </p>
         </section>
         <section id="products">
-            <div class="container p-0" >
+            <div class="container-fluid" >
 
             <h2 class="py-5">products</h2>
             <div class="row m-0">
-                <div class="col-8 col-lg-4" id="product-1">
+                <div class="col-lg-4" id="product-1">
                     <div class="card actual p-1 border-0 mb-4" >
                         <h3>Leia</h3>
                         <p>The "Leia" is a white ceramic vase with 7 segments - 3 wider and 4 narrower. It is perfect for displaying a small bouquet of flowers.</p>
@@ -92,7 +104,7 @@
                         <button type="submit" class="btn mt-2 mp-2">buy</button>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4" id="product-2">
+                <div class="col-lg-4" id="product-2">
                     <div class="card p-1 border-0 mb-4" >
                         <h3>Ann</h3>
                         <p>The "Ann" is a minimalist ceramic vase with 2 segments - wider at the bottom and narrower at the top. It's perfect for showcasing a single stem flower.</p>
@@ -100,7 +112,7 @@
                         <button type="submit" class="btn mt-2 mp-2">buy</button>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4" id="product-3">
+                <div class="col-lg-4" id="product-3">
                     <div class="card p-1 border-0 mb-4">
                         <h3>Lily</h3>
                         <p>A sleek and stylish dark gray vase with 4 segments, 2 narrower and 2 wider, forming a spherical shape. The unique design adds a touch of modern elegance to any room.</p>
@@ -108,15 +120,15 @@
                         <button type="submit" class="btn mt-2 mp-2">buy</button>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4" id="product-4">
+                <div class="col-lg-4" id="product-4">
                     <div class="card p-1 border-0 mb-4">
                         <h3>Helen</h3>
-                        <p>A sleek white vase with a fluid shape, it fits seamlessly into any interior style, adding a touch of sophistication. Something beautiful.</p>
+                        <p>A sleek white vase with a fluid shape, it fits seamlessly into any interior style, adding a touch of sophistication. Something really beautiful.</p>
                         <img class="img-product img-fluid" src="/img/product4.jpg">
                         <button type="submit" class="btn mt-2 mp-2">buy</button>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4" id="product-5">
+                <div class="col-lg-4" id="product-5">
                     <div class="card p-1 border-0 mb-4">
                         <h3>Amy</h3>
                         <p>A white, timeless design with a minimalist shape. Perfect for any interior style.Made of high-quality ceramic for durability and comfort.
@@ -125,7 +137,7 @@
                         <button type="submit" class="btn mt-2 mp-2">buy</button>
                     </div>
                 </div>
-                <div class="col-8 col-lg-4" id="product-6">
+                <div class="col-lg-4" id="product-6">
                     <div class="card p-1 border-0 mb-4">
                         <h3>Emily</h3>
                         <p class="text-start">The "Emily" is a ceramic vase in natural white color, shaped like a doughnut. It's unique shape adds a playful touch to any floral arrangement.</p>
@@ -219,9 +231,9 @@
                 <div class="col-lg-4">
                     <p><i class="bi bi-envelope-fill m-3"></i>leia@uniqueforms.pl</p>
                     <br>
-                    <p></p><i class="fa fa-phone"></i>+48 987 654 321</p>
+                    <p><i class="bi bi-telephone-fill m-3"></i>+48 987 654 321</p>
                     <br>
-                    <p></p><i class="fa fa-map-marker"></i>Warsaw, Poland</p>
+                    <p class="mb-5"><i class="bi bi-geo-alt-fill m-3"></i>Warsaw, Poland</p>
                 </div> 
 
                 <div class="col-lg-4 ps-3 ms-3">
